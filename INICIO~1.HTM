@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iniciar Sesión</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Iniciar Sesión</h2>
+  <form action="Home.html" method="get" onsubmit="applyDiscount()">
+    <input type="text" id="username" name="username" placeholder="Nombre de Usuario" required>
+    <input type="password" id="password" name="password" placeholder="Contraseña" required>
+    <input type="submit" value="Iniciar Sesión">
+  </form>
+</div>
+
+<script>
+  function applyDiscount() {
+    // Simulación de inicio de sesión exitoso
+    // Supongamos que el inicio de sesión es exitoso
+    // Luego, aplicamos el descuento del 5%
+    alert("¡Inicio de sesión exitoso!");
+    
+    // Aplicar descuento del 5%
+    var total = 100; // Ejemplo de precio total antes del descuento
+    var descuento = total * 0.05; // 5% del total
+    var precioConDescuento = total - descuento; // Precio después del descuento
+
+    alert("¡Has obtenido un descuento del 5%! El total ahora es: $" + precioConDescuento);
+
+    // No es necesario retornar false, ya que el formulario se envía a la página de destino
+  }
+</script>
+
+</body>
+</html>

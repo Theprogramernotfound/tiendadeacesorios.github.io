@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        nav ul li a:hover {
+            color: #007bff;
+        }
+        
+        section {
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            color: #007bff;
+        }
+        
+        ul {
+            padding: 0;
+        }
+        
+        ul li {
+            margin-bottom: 10px;
+        }
+        .homeimagen{
+        width: 1200px;
+        
+        }
+        .categories-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            border: none;
+            cursor: pointer;
+          }
+          
+          /* Estilos para el menú desplegable */
+          .dropdown {
+            position: relative;
+            display: inline-block;
+          }
+          
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+          
+          .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+          }
+          
+          .dropdown-content a:hover {
+            background-color: #f1f1f1;
+          }
+          
+          .dropdown:hover .dropdown-content {
+            display: block;
+          }
+          
+          .dropdown:hover .categories-btn {
+            background-color: #3e8e41;
+          }
+          .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: gray;
+            color: white;
+            text-align: center;
+        }
+        body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* Asegura que el menú esté por encima del contenido */
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Estilo para el espacio reservado en la parte superior para el menú fijo */
+body::before {
+  content: "";
+  display: block;
+  height: 70px; /* Ajusta esta altura según la altura del menú */
+  width: 100%;
+}
+
+/* Estilo para el contenido principal para evitar que se superponga con el menú */
+main {
+  margin-top: 70px; /* Ajusta esto según la altura del menú */
+}
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+       
+          <nav>
+            <ul>
+              <li><a href="Home.html">Inicio</a></li>
+              <li><a href="quienes_somos.html">quienes somos </a></li>
+              <li><a href="contactanos.html">contactanos</a></li>
+              <li><a href="catalogo.html">Catalogo</a></li>
+              <li><a href="carrito.html">carrito</a></li>
+              <li><a href="inicio_de_secion.html">Registrate</a></li>
+    
+    
+              <div class="dropdown">
+                <button class="categories-btn">Categorías</button>
+                <div class="dropdown-content">
+                  <a href="catalogo.html"><img src="imagenes/icono_de_todos_mascotas.png" alt="" width="30px">todo para tus mascotas</a>
+                  <a href="categoria_gatos.html"><img src="imagenes/gato_icono_categorias.png" alt=""  width="30px">para gatos</a>
+                  <a href="categoria_perros.html"> <img src="imagenes/perrito_icono_categorias.png" alt=""   width="30px" >para perros </a>
+                </div> 
+               
+              </div>
+                </ul>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <center>
+        <br>
+        <br>
+        <br><br>
+        <br>
+        <br>
+    <h2>Quiénes somos</h2>
+        <p>Somos amantes de los animales comprometidos con ofrecer productos y servicios de calidad para mascotas.</p>
+         <video autoplay controls src="mis videos/4267751-uhd_3840_2160_30fps.mp4" width="350px"></video>
+
+    </section>
+</center>   
+   
+    
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br><br><br>
+    <br>
+
+    <section id="valores">
+        <h2>Valores</h2>
+        <ul>
+            <li>Amor por los animales</li>
+            <li>Calidad en nuestros productos</li>
+            <li>Compromiso con nuestros clientes</li>
+            <li>Creatividad e innovación</li>
+
+        </ul>
+        <video autoplay controls src="mis videos/854179-hd_1920_1080_25fps.mp4" width="350px"></video>
+    </div>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br><br><br>
+    <br>
+    <h2>Visión</h2>
+    <p>Queremos ser reconocidos como la mejor tienda de accesorios para mascotas, ofreciendo soluciones innovadoras y satisfactorias para todos.</p>
+    <video autoplay controls src="mis videos/3775011-hd_1920_1080_25fps.mp4" width="350px"></video>
+
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br><br><br>
+    <br>
+    <div class="ugu">
+    <h2>Misión</h2>
+    <p>Nuestra misión es mejorar la calidad de vida de las mascotas y sus dueños mediante productos únicos y servicios excepcionales.</p>
+    <video autoplay controls src="mis videos/2849936-uhd_3840_2160_24fps.mp4" width="350px"></video>
+</div>
+
+
+    <div class="footer">
+        <p>&copy; 2024 pet store bell. Todos los derechos reservados.</p>
+      </div>
+
+</body>
+</html>
